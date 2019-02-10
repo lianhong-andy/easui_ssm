@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AdminServiceImpl.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../../../logo.png'/>
+  <script type='text/javascript' src='../../../../coverage.js'></script>
+  <script type='text/javascript' src='../../../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>easyUI\src\main\java\com\andy\service\impl\AdminServiceImpl.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.andy.service.impl;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import com.andy.dao.AdminDao;
+import com.andy.domain.TourAdmin;
+import com.andy.domain.common.PageVo;
+import com.andy.service.AdminService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>12</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>@Service</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>13</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered' id='l13s0'>public class AdminServiceImpl implements AdminService {</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>14</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Autowired</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>15</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    private AdminDao <span class='instance uncovered' title='Reads: 0 Writes: 0'>adminDao</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>16</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>17</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public PageVo findAll(TourAdmin tourAdmin) {</pre></td>
+    </tr>
+    <tr>
+      <td></td><td class='count'>0</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#ff0000' onclick='hidePath()'>Path coverage: 0/12</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l23s0 l23s2 l23s4 l25s0 l25s1')">A: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l23s0 l23s1 l23s3 l23s4 l25s0 l25s1')">B: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l23s0 l23s1 l23s2 l23s4 l25s0 l25s1')">C: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l21s0 l23s0 l23s2 l23s4 l25s0 l25s1')">D: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l21s0 l23s0 l23s1 l23s3 l23s4 l25s0 l25s1')">E: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l21s0 l23s0 l23s1 l23s2 l23s4 l25s0 l25s1')">F: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l23s0 l23s2 l23s4 l25s0 l26s0 l29s0')">G: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l23s0 l23s1 l23s3 l23s4 l25s0 l26s0 l29s0')">H: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l23s0 l23s1 l23s2 l23s4 l25s0 l26s0 l29s0')">I: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l21s0 l23s0 l23s2 l23s4 l25s0 l26s0 l29s0')">J: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l21s0 l23s0 l23s1 l23s3 l23s4 l25s0 l26s0 l29s0')">K: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l18s0 l20s0 l21s0 l23s0 l23s1 l23s2 l23s4 l25s0 l26s0 l29s0')">L: 0</span>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>18</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l18s0'>        PageVo vo = new PageVo();</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>19</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l19s0'>        Integer size = tourAdmin.getSize();</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>20</td><td class='count'>0</td>
+      <td><pre class='prettyprint jmp'>        <span id='l20s0' title='Executions: 0' class='uncovered'>if(size==null)</span>{</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>21</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l21s0'>            size=10;</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>22</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>23</td><td class='count'>0</td>
+      <td><pre class='prettyprint jmp'>        <span id='l23s0' title='Executions: 0' class='uncovered'>Integer page = tourAdmin.getPage()==null</span> || <span id='l23s1' title='Executions: 0' class='uncovered'>tourAdmin.getPage().equals(0)?0:(tourAdmin.getPage()-1)*size;</span></pre>
+        <ol style='display:none'></ol>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>24</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l24s0'>        List&lt;TourAdmin> list = adminDao.findAll(page,size);</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>25</td><td class='count'>0</td>
+      <td><pre class='prettyprint jmp'>        <span id='l25s0' title='Executions: 0' class='uncovered'>if(list==null)</span> <span id='l25s1' title='Executions: 0' class='uncovered'>return vo;</span></pre>
+        <ol style='display:none'></ol>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>26</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l26s0'>        vo.setRows(list);</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>27</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l27s0'>        Integer count = adminDao.getCount();</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>28</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l28s0'>        vo.setTotal(count);</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l29s0'>        return vo;</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>30</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>31</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>

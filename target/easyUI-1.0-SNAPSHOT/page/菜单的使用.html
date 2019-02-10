@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.easyui.min.js"></script>
+<link rel="stylesheet" href="../js/themes/default/easyui.css">
+<link rel="stylesheet" href="../js/themes/icon.css">
+
+<body>
+    <div id="easyui_menu" style="width: 200px;" class="easyui-menu">
+        <div data-options="iconCls:'icon-add'">新建文件夹</div>
+        <div class="menu-sep"></div>
+        <div>排列图标</div>
+        <div class="menu-sep"></div>
+        <div>创建快捷方式</div>
+        <div class="menu-sep"></div>
+        <div data-options="iconCls:'icon-remove'">删除</div>
+        <div class="menu-sep"></div>
+        <div>复制</div>
+        <div class="menu-sep"></div>
+        <div>粘贴</div>
+        <div class="menu-sep"></div>
+        <div>打开方式
+            <div style="width: 200px">
+                <div>用迅雷看看打开</div>
+                <div>用迅爱奇艺打开</div>
+                <div>用暴风影音打开</div>
+            </div>
+        </div>
+        <div data-options="iconCls:'icon-save'">保存</div>
+        <div class="menu-sep"></div>
+    </div>
+
+
+</body>
+<script>
+    $(function () {
+        $("#easyui_menu").menu("show",{
+            left:200,
+            top:100
+        });
+    });
+</script>
+</html>

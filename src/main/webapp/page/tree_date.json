@@ -1,0 +1,54 @@
+[{
+  "id":1,
+  "text":"easyUI从入门到精通",
+  "children":[{
+    "id":11,
+    "iconCls":"icon-add",
+    "text":"树菜单",
+    "state":"closed",
+    "children":[{
+      "id":111,
+      "iconCls":"icon-remove",
+      "text":"子节点1",
+      "attributes":{
+        "url":"http://www.baidu.com"
+      }
+    },{
+      "id":112,
+      "text":"子节点3"
+    },{
+      "id":113,
+      "text":"子节点2"
+    }]
+  },{
+    "id":12,
+    "text":"Program Files",
+    "children":[{
+      "id":121,
+      "text":"Intel"
+    },{
+      "id":122,
+      "text":"Java",
+      "attributes":{
+        "p1":"Custom Attribute1",
+        "p2":"Custom Attribute2"
+      }
+    },{
+      "id":123,
+      "text":"Microsoft Office"
+    },{
+      "id":124,
+      "text":"Games",
+      "checked":true
+    }]
+  },{
+    "id":13,
+    "text":"base.html"
+  },{
+    "id":14,
+    "text":"about.html"
+  },{
+    "id":15,
+    "text":"welcome.html"
+  }]
+}]
